@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmed Abdelhamed | Data Analysis & Business Systems</title>
+  <meta name="description" content="Ahmed Abdelhamed is an Information Technology and Accounting professional focused on data analysis, business systems, and visual design." />
+  <meta name="keywords" content="Ahmed Abdelhamed, Data Analysis, Business Information Systems, Power BI, Excel, Accounting, Business Systems, Graphic Design" />
+  <meta name="author" content="Ahmed Abdelhamed" />
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Ahmed Abdelhamed | Data Analysis & Business Systems" />
+  <meta property="og:description" content="Data analysis, business systems, accounting operations, and visual design." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ahmed Abdelhamed Portfolio" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="alternate icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=3.4" />
+</head>
+<body class="antialiased">
+
+  <!-- Interactive Starry Canvas Background -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Ultra-Polished Animated Intro Screen -->
+  <div id="intro-screen" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+    <div class="intro-glow"></div>
+    <div class="intro-glow-secondary"></div>
+    <div class="intro-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; margin: 0 auto; width: 100%;">
+      <div class="intro-badge" style="margin: 0 auto 1.5rem auto;">
+        <span class="intro-badge-dot"></span>
+        <span>PORTFOLIO 2026</span>
+      </div>
+      <h1 class="intro-name" style="text-align: center; margin: 0 auto;">
+        Ahmed <span class="gradient-text">Abdelhamed</span>
+      </h1>
+      <p class="intro-subtitle" style="text-align: center; margin: 1.25rem auto 0 auto;">Data Analysis · Business Systems · Visual Design</p>
+      <div class="intro-progress-container" style="margin: 2.5rem auto 0 auto;">
+        <div class="intro-progress-bar"></div>
+      </div>
+      <button type="button" id="intro-skip-btn" class="intro-skip-btn cursor-pointer" style="margin: 2rem auto 0 auto;" aria-label="Skip Intro">
+        <span>Skip</span>
+        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 17 18 12 13 7"/><polyline points="6 17 11 12 6 7"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Sticky Floating Navbar -->
+  <nav id="main-navbar">
+    <div class="container mx-auto px-3 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="navbar-row flex items-center justify-between h-14 flex-nowrap gap-2">
+        
+        <!-- Logo -->
+        <a href="#hero" class="navbar-logo flex items-center gap-2 sm:gap-2.5 group flex-shrink-0" aria-label="Ahmed Abdelhamed home">
+          <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-br from-primary/25 to-secondary/15 border border-primary/35 flex items-center justify-center group-hover:border-primary/70 transition-all shadow-sm flex-shrink-0">
+            <span class="text-primary font-bold text-base sm:text-lg">A</span>
+          </div>
+          <div class="flex flex-col flex-shrink-0">
+            <span class="text-xs sm:text-sm font-bold text-foreground tracking-tight leading-tight whitespace-nowrap">Ahmed Abdelhamed</span>
+            <span class="text-[10px] text-primary font-medium tracking-wide flex items-center gap-1 mt-0.5 sm:flex hidden whitespace-nowrap">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block"></span>
+              <span data-i18n="Hero.focusValue">Data & Business Systems</span>
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden xl:flex items-center gap-1">
+          <a href="#about" class="nav-link px-2.5 py-2 text-sm font-medium" data-i18n="Navigation.about">About</a>
+          <a href="#skills" class="nav-link px-2.5 py-2 text-sm font-medium" data-i18n="Navigation.skills">Skills</a>
+          <a href="#projects" class="nav-link px-2.5 py-2 text-sm font-medium" data-i18n="Navigation.projects">Projects</a>
+          <a href="#courses" class="nav-link px-2.5 py-2 text-sm font-medium" data-i18n="Navigation.courses">Courses</a>
+          <a href="#certifications" class="nav-link px-2.5 py-2 text-sm font-medium" data-i18n="Navigation.certifications">Certificates</a>
+          <a href="#experience" class="nav-link px-2.5 py-2 text-sm font-medium" data-i18n="Navigation.experience">Experience</a>
+          <a href="#contact" class="nav-link px-2.5 py-2 text-sm font-medium" data-i18n="Navigation.contact">Contact</a>
+        </div>
+
+        <!-- Desktop Controls -->
+        <div class="hidden xl:flex items-center gap-1.5 flex-shrink-0">
+          <!-- Language Switcher -->
+          <button type="button" class="nav-icon-btn lang-toggle-btn" aria-label="Toggle Language">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <span class="lang-label text-xs font-bold uppercase">ar</span>
+          </button>
+
+          <!-- Theme Toggle -->
+          <button type="button" class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Theme"></button>
+
+          <!-- Social Links -->
+          <a href="https://www.linkedin.com/in/ahmed3bdelhamed/" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="nav-icon-btn">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.behance.net/ahmedabdelhamed14" target="_blank" rel="noreferrer" aria-label="Behance" class="nav-icon-btn">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+          </a>
+        </div>
+
+        <!-- Mobile Controls (Quick Actions & Hamburger Button) -->
+        <div class="mobile-nav-group flex xl:hidden items-center gap-1.5 flex-nowrap flex-shrink-0">
+          <!-- Quick Lang Switcher -->
+          <button type="button" class="nav-icon-btn lang-toggle-btn mobile-quick-btn" aria-label="Toggle Language">
+            <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <span class="lang-label text-xs font-bold uppercase">ar</span>
+          </button>
+
+          <!-- Quick Theme Switcher -->
+          <button type="button" class="nav-icon-btn theme-toggle-btn mobile-quick-btn" aria-label="Toggle Theme"></button>
+
+          <!-- Animated Hamburger Button -->
+          <button id="mobile-menu-btn" type="button" class="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu-drawer">
+            <span class="hamburger-box">
+              <span class="hamburger-bar bar-1"></span>
+              <span class="hamburger-bar bar-2"></span>
+              <span class="hamburger-bar bar-3"></span>
+            </span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Backdrop Overlay -->
+  <div id="mobile-backdrop" class="mobile-backdrop" aria-hidden="true"></div>
+
+  <!-- Modern Mobile Glass Drawer -->
+  <aside id="mobile-menu-drawer" class="mobile-menu-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="mobile-drawer-inner">
+      
+      <!-- Drawer Header with Monogram Profile & Close Button -->
+      <div class="mobile-drawer-header">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary/30 to-secondary/20 border border-primary/40 flex items-center justify-center shadow-md">
+            <span class="text-primary font-bold text-lg">A</span>
+          </div>
+          <div>
+            <div class="font-bold text-foreground text-sm sm:text-base leading-tight">Ahmed Abdelhamed</div>
+            <div class="text-[11px] text-muted-foreground flex items-center gap-1.5 mt-0.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 inline-block animate-pulse"></span>
+              <span data-i18n="Hero.status">Open to opportunities</span>
+            </div>
+          </div>
+        </div>
+        <button id="mobile-menu-close-btn" type="button" class="mobile-close-btn" aria-label="Close navigation menu">
+          <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Navigation Links List with Icons -->
+      <nav class="mobile-drawer-nav">
+        <a href="#about" class="mobile-nav-item" data-section="about">
+          <div class="mobile-nav-icon">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <span class="mobile-nav-text" data-i18n="Navigation.about">About</span>
+          <svg class="mobile-nav-chevron w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+
+        <a href="#skills" class="mobile-nav-item" data-section="skills">
+          <div class="mobile-nav-icon">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <span class="mobile-nav-text" data-i18n="Navigation.skills">Skills</span>
+          <svg class="mobile-nav-chevron w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+
+        <a href="#projects" class="mobile-nav-item" data-section="projects">
+          <div class="mobile-nav-icon">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <span class="mobile-nav-text" data-i18n="Navigation.projects">Projects</span>
+          <svg class="mobile-nav-chevron w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+
+        <a href="#courses" class="mobile-nav-item" data-section="courses">
+          <div class="mobile-nav-icon">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+          </div>
+          <span class="mobile-nav-text" data-i18n="Navigation.courses">Courses</span>
+          <svg class="mobile-nav-chevron w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+
+        <a href="#certifications" class="mobile-nav-item" data-section="certifications">
+          <div class="mobile-nav-icon">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <span class="mobile-nav-text" data-i18n="Navigation.certifications">Certificates</span>
+          <svg class="mobile-nav-chevron w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+
+        <a href="#experience" class="mobile-nav-item" data-section="experience">
+          <div class="mobile-nav-icon">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+          </div>
+          <span class="mobile-nav-text" data-i18n="Navigation.experience">Experience</span>
+          <svg class="mobile-nav-chevron w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+
+        <a href="#contact" class="mobile-nav-item" data-section="contact">
+          <div class="mobile-nav-icon">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <span class="mobile-nav-text" data-i18n="Navigation.contact">Contact</span>
+          <svg class="mobile-nav-chevron w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </nav>
+
+      <!-- Quick Action CTA Button -->
+      <div class="mobile-drawer-cta">
+        <a href="#contact" class="mobile-cta-btn">
+          <span data-i18n="Hero.contact">Get in touch</span>
+          <svg class="w-4 h-4 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <!-- Social & Direct Channels in Drawer -->
+      <div class="mobile-drawer-footer">
+        <a href="https://www.linkedin.com/in/ahmed3bdelhamed/" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="mobile-social-btn">
+          <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://www.behance.net/ahmedabdelhamed14" target="_blank" rel="noreferrer" aria-label="Behance" class="mobile-social-btn">
+          <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+        </a>
+        <a href="mailto:info@ahmedabdelhamed.com" class="mobile-social-btn" aria-label="Email">
+          <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </aside>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="min-h-screen flex items-center relative overflow-hidden">
+      <div class="absolute inset-0 bg-grid opacity-20"></div>
+      <div class="absolute inset-0 bg-gradient-radial"></div>
+      <div class="absolute -top-24 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse-glow"></div>
+      <div class="absolute bottom-0 right-1/4 w-80 h-80 bg-secondary/10 rounded-full blur-3xl animate-pulse-glow" style="animation-delay: 1.5s;"></div>
+
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl relative z-10 pt-24 pb-16">
+        <div class="grid lg:grid-cols-[1.2fr_.8fr] gap-12 items-center">
+          
+          <div class="space-y-7 text-center lg:text-left rtl:lg:text-right reveal-item">
+            <!-- Status Badge -->
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-glow-pulse"></span>
+              <span class="text-sm text-muted-foreground" data-i18n="Hero.status">Open to opportunities and collaborations</span>
+            </div>
+
+            <!-- Name & Title -->
+            <div>
+              <p class="section-title" data-i18n="Hero.title">Business Information Systems</p>
+              <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold leading-tight">
+                <span class="gradient-text" data-i18n="Hero.firstName">Ahmed</span>
+                <br />
+                <span class="gradient-text" data-i18n="Hero.lastName">Abdelhamed</span>
+              </h1>
+            </div>
+
+            <p class="text-xl md:text-2xl text-foreground font-medium" data-i18n="Hero.subtitle">
+              Data, systems, and design for better decisions.
+            </p>
+
+            <!-- Roles -->
+            <div class="flex flex-wrap items-center gap-4 text-sm text-muted-foreground justify-center lg:justify-start rtl:lg:justify-end">
+              <span class="inline-flex items-center gap-2">
+                <svg class="w-4 h-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                <span data-i18n="Hero.role1">Data Analysis</span>
+              </span>
+              <span class="text-muted-foreground/30">|</span>
+              <span class="inline-flex items-center gap-2">
+                <svg class="w-4 h-4 text-secondary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+                <span data-i18n="Hero.role2">Business Systems</span>
+              </span>
+              <span class="text-muted-foreground/30">|</span>
+              <span class="inline-flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
+                <span data-i18n="Hero.role3">Visual Design</span>
+              </span>
+            </div>
+
+            <p class="text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed" data-i18n="Hero.description">
+              Information Technology and Accounting professional focused on turning data into clear insights, improving workflows, and delivering practical digital solutions.
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex flex-wrap items-center gap-4 justify-center lg:justify-start rtl:lg:justify-end">
+              <a href="#projects" class="btn-primary inline-flex items-center gap-2">
+                <span data-i18n="Hero.explore">Explore projects</span>
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+              </a>
+              <a href="https://drive.google.com/file/d/1MP9KjWSY40EEfzIeCvYP-ioGCmX6hxop/view?usp=drive_link" target="_blank" rel="noreferrer" class="btn-outline inline-flex items-center gap-2">
+                <span data-i18n="Hero.viewCV">View CV</span>
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+              </a>
+              <a href="#contact" class="btn-outline" data-i18n="Hero.contact">Get in touch</a>
+            </div>
+
+            <!-- Location -->
+            <p class="inline-flex items-center gap-2 text-sm text-muted-foreground">
+              <svg class="w-4 h-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-i18n="Hero.location">Heliopolis, Cairo, Egypt</span>
+            </p>
+          </div>
+
+          <!-- Profile Image Card -->
+          <div class="relative mx-auto w-full max-w-sm reveal-item">
+            <div class="absolute -inset-5 bg-gradient-to-br from-primary/30 via-transparent to-secondary/20 rounded-[2rem] blur-2xl"></div>
+            <div class="relative aspect-square rounded-[2rem] overflow-hidden border border-primary/20 glass-card p-2 shadow-[0_25px_90px_-35px_hsl(var(--primary)/0.65)] hover:scale-105 transition-transform duration-500">
+              <img
+                src="images/ahmed-abdelhamed.jpg"
+                alt="Ahmed Abdelhamed"
+                class="w-full h-full object-cover rounded-[1.55rem]"
+              />
+            </div>
+            <!-- Focus Float Card -->
+            <div class="hero-focus-badge glass-card rounded-xl px-4 py-3 animate-float">
+              <p class="text-xs text-muted-foreground" data-i18n="Hero.focusLabel">Focus</p>
+              <p class="text-sm font-semibold text-foreground" data-i18n="Hero.focusValue">Data & Business Systems</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <div class="hero-scroll-indicator" style="position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 20;">
+        <a href="#about" aria-label="Scroll to About section" class="p-3 rounded-full border border-primary/20 text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors bg-background/50 backdrop-blur-md">
+          <svg class="w-6 h-6 animate-bounce-slow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="py-24 relative">
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent"></div>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+        
+        <div class="text-center mb-12 reveal-item">
+          <p class="section-title" data-i18n="About.sectionTitle">About me</p>
+          <h2 class="section-heading" data-i18n="About.heading">Building clarity from complexity</h2>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6 reveal-item">
+            <p class="text-lg text-muted-foreground leading-relaxed" data-i18n="About.paragraph1">I am an Information Technology and Accounting professional with a strong foundation in data analysis, systems management, and business operations. I use technology to make information more useful and processes more efficient.</p>
+            <p class="text-lg text-muted-foreground leading-relaxed" data-i18n="About.paragraph2">My experience spans financial data, customer-focused systems, visual communication, and web/UI design. I enjoy collaborating with teams to solve practical challenges with accuracy and care.</p>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 animate-glow-pulse flex-shrink-0"></span>
+                <span class="text-muted-foreground" data-i18n="About.bullet1">Business Information Systems student at Future Academy</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 animate-glow-pulse flex-shrink-0"></span>
+                <span class="text-muted-foreground" data-i18n="About.bullet2">Hands-on experience in accounting, banking, and data operations</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 animate-glow-pulse flex-shrink-0"></span>
+                <span class="text-muted-foreground" data-i18n="About.bullet3">Comfortable translating data into understandable reports and visuals</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 animate-glow-pulse flex-shrink-0"></span>
+                <span class="text-muted-foreground" data-i18n="About.bullet4">Committed to continuous learning in technology and business</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Highlight Cards -->
+          <div class="grid grid-cols-2 gap-4 reveal-item">
+            <div class="p-6 glass-card-hover">
+              <div class="p-3 rounded-lg bg-primary/10 w-fit mb-4">
+                <svg class="w-8 h-8 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+              </div>
+              <p class="text-foreground font-semibold" data-i18n="About.highlight1">Data Analysis</p>
+            </div>
+            <div class="p-6 glass-card-hover">
+              <div class="p-3 rounded-lg bg-emerald-400/10 w-fit mb-4">
+                <svg class="w-8 h-8 text-emerald-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+              </div>
+              <p class="text-foreground font-semibold" data-i18n="About.highlight2">Accounting & ERP</p>
+            </div>
+            <div class="p-6 glass-card-hover">
+              <div class="p-3 rounded-lg bg-secondary/10 w-fit mb-4">
+                <svg class="w-8 h-8 text-secondary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+              </div>
+              <p class="text-foreground font-semibold" data-i18n="About.highlight3">Visual Design</p>
+            </div>
+            <div class="p-6 glass-card-hover">
+              <div class="p-3 rounded-lg bg-yellow-400/10 w-fit mb-4">
+                <svg class="w-8 h-8 text-yellow-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-.838L12.83 2.18a2 2 0 0 0-1.66 0L2.6 10.084a1 1 0 0 0 0 1.832l8.57 7.908a2 2 0 0 0 1.66 0l8.57-7.908a1 1 0 0 0 .02-.994z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+              </div>
+              <p class="text-foreground font-semibold" data-i18n="About.highlight4">BIS Student</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="py-24 relative">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <div class="text-center mb-12 reveal-item">
+          <p class="section-title" data-i18n="Skills.sectionTitle">Expertise</p>
+          <h2 class="section-heading" data-i18n="Skills.heading">Skills that support better work</h2>
+          <p class="section-subheading mx-auto mt-4" data-i18n="Skills.subheading">A balanced toolkit across data, systems, financial operations, and teamwork.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-6 reveal-item">
+          <!-- Cat 1 -->
+          <div class="p-6 glass-card-hover border-primary/20">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="p-2 rounded-lg bg-primary/10">
+                <svg class="w-5 h-5 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+              </div>
+              <h3 class="text-xl font-semibold text-foreground" data-i18n="Skills.cat1">Data & Business Intelligence</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-badge">Data Analysis</span>
+              <span class="skill-badge">Data Visualization</span>
+              <span class="skill-badge">Power BI</span>
+              <span class="skill-badge">Tableau</span>
+              <span class="skill-badge">Data Cleaning</span>
+              <span class="skill-badge">Data Validation</span>
+            </div>
+          </div>
+
+          <!-- Cat 2 -->
+          <div class="p-6 glass-card-hover border-secondary/20">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="p-2 rounded-lg bg-secondary/10">
+                <svg class="w-5 h-5 text-secondary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+              </div>
+              <h3 class="text-xl font-semibold text-foreground" data-i18n="Skills.cat2">Systems & Productivity</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-badge">SQL</span>
+              <span class="skill-badge">Microsoft Access</span>
+              <span class="skill-badge">Advanced Excel</span>
+              <span class="skill-badge">ERP Systems</span>
+              <span class="skill-badge">SAP</span>
+              <span class="skill-badge">Oracle</span>
+            </div>
+          </div>
+
+          <!-- Cat 3 -->
+          <div class="p-6 glass-card-hover border-emerald-400/20">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="p-2 rounded-lg bg-emerald-400/10">
+                <svg class="w-5 h-5 text-emerald-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="18"/><line x1="10" x2="10" y1="18" y2="18"/><line x1="14" x2="14" y1="18" y2="18"/><line x1="18" x2="18" y1="18" y2="18"/><polygon points="12 2 20 7 4 7"/></svg>
+              </div>
+              <h3 class="text-xl font-semibold text-foreground" data-i18n="Skills.cat3">Accounting & Operations</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-badge">Financial Reporting</span>
+              <span class="skill-badge">Audit & Compliance</span>
+              <span class="skill-badge">Process Improvement</span>
+              <span class="skill-badge">Technical Documentation</span>
+              <span class="skill-badge">Data Entry</span>
+            </div>
+          </div>
+
+          <!-- Cat 4 -->
+          <div class="p-6 glass-card-hover border-yellow-400/20">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="p-2 rounded-lg bg-yellow-400/10">
+                <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg>
+              </div>
+              <h3 class="text-xl font-semibold text-foreground" data-i18n="Skills.cat4">Collaboration</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-badge">Problem Solving</span>
+              <span class="skill-badge">Communication</span>
+              <span class="skill-badge">Team Collaboration</span>
+              <span class="skill-badge">Leadership</span>
+              <span class="skill-badge">Team Management</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects" class="py-24 relative">
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent"></div>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+        
+        <div class="text-center mb-12 reveal-item">
+          <p class="section-title" data-i18n="Projects.sectionTitle">Portfolio</p>
+          <h2 class="section-heading" data-i18n="Projects.heading">Selected project concepts</h2>
+          <p class="section-subheading mx-auto mt-4 max-w-2xl" data-i18n="Projects.subheading">A selection of projects that reflect how Ahmed approaches data, business systems, and clear communication.</p>
+        </div>
+
+        <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+      </div>
+    </section>
+
+    <!-- ==================== DATA FOCUS / AIML SECTION ==================== -->
+    <section id="data-focus" class="py-24 relative">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        
+        <div class="text-center mb-12 reveal-item">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 mb-4">
+            <svg class="w-4 h-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            <span class="text-sm text-primary" data-i18n="AIML.badge">Professional focus</span>
+          </div>
+          <h2 class="section-heading" data-i18n="AIML.heading">Data that drives better decisions</h2>
+          <p class="section-subheading mx-auto mt-4" data-i18n="AIML.subheading">A practical focus on structured information, accurate processes, and understandable reporting.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 reveal-item">
+          
+          <article class="p-6 glass-card-hover">
+            <div class="p-2.5 rounded-xl w-fit mb-5 bg-primary/10">
+              <svg class="w-7 h-7 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            </div>
+            <h3 class="text-lg font-semibold text-foreground mb-2" data-i18n="AIML.area1Title">Data Analysis</h3>
+            <p class="text-sm text-muted-foreground leading-relaxed" data-i18n="AIML.area1Desc">Discovering patterns, tracking performance, and shaping information into useful insights.</p>
+          </article>
+
+          <article class="p-6 glass-card-hover">
+            <div class="p-2.5 rounded-xl w-fit mb-5 bg-secondary/10">
+              <svg class="w-7 h-7 text-secondary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+            </div>
+            <h3 class="text-lg font-semibold text-foreground mb-2" data-i18n="AIML.area2Title">Systems Management</h3>
+            <p class="text-sm text-muted-foreground leading-relaxed" data-i18n="AIML.area2Desc">Organizing reliable records and supporting smoother day-to-day business processes.</p>
+          </article>
+
+          <article class="p-6 glass-card-hover">
+            <div class="p-2.5 rounded-xl w-fit mb-5 bg-emerald-400/10">
+              <svg class="w-7 h-7 text-emerald-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4"/><polyline points="14 2 14 8 20 8"/><path d="m3 15 2 2 4-4"/></svg>
+            </div>
+            <h3 class="text-lg font-semibold text-foreground mb-2" data-i18n="AIML.area3Title">Data Quality</h3>
+            <p class="text-sm text-muted-foreground leading-relaxed" data-i18n="AIML.area3Desc">Cleaning, validating, and documenting data so reports can be trusted.</p>
+          </article>
+
+          <article class="p-6 glass-card-hover">
+            <div class="p-2.5 rounded-xl w-fit mb-5 bg-yellow-400/10">
+              <svg class="w-7 h-7 text-yellow-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            </div>
+            <h3 class="text-lg font-semibold text-foreground mb-2" data-i18n="AIML.area4Title">Business Reporting</h3>
+            <p class="text-sm text-muted-foreground leading-relaxed" data-i18n="AIML.area4Desc">Creating clear reports and visuals that help teams make confident decisions.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== COURSES SECTION ==================== -->
+    <section id="courses" class="py-24 relative">
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/5 to-transparent"></div>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+        
+        <div class="text-center mb-12 reveal-item">
+          <p class="section-title" data-i18n="Courses.sectionTitle">Learn with Ahmed</p>
+          <h2 class="section-heading" data-i18n="Courses.heading">Courses designed for practical progress</h2>
+          <p class="section-subheading mx-auto mt-4" data-i18n="Courses.subheading">Sample course offerings built around everyday data and business skills.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal-item">
+          <!-- Course 1 -->
+          <article class="p-6 glass-card-hover flex flex-col">
+            <div class="p-3 rounded-xl w-fit mb-5 bg-emerald-400/10">
+              <svg class="w-7 h-7 text-emerald-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M8 13h2"/><path d="M14 13h2"/><path d="M8 17h2"/><path d="M14 17h2"/></svg>
+            </div>
+            <span class="text-xs font-medium text-primary mb-3" data-i18n="Courses.course1Level">Beginner</span>
+            <h3 class="text-xl font-semibold text-foreground mb-3" data-i18n="Courses.course1Title">Excel for Smarter Business Decisions</h3>
+            <p class="text-sm text-muted-foreground leading-relaxed mb-6 flex-1" data-i18n="Courses.course1Desc">A practical starter course in formulas, clean spreadsheets, and confident reporting.</p>
+            <a href="mailto:info@ahmedabdelhamed.com?subject=Course%20enquiry%3A%20Excel%20for%20Smarter%20Business%20Decisions" class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-foreground transition-colors">
+              <span data-i18n="Courses.askAbout">Ask about this course</span>
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Course 2 -->
+          <article class="p-6 glass-card-hover flex flex-col">
+            <div class="p-3 rounded-xl w-fit mb-5 bg-primary/10">
+              <svg class="w-7 h-7 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            </div>
+            <span class="text-xs font-medium text-primary mb-3" data-i18n="Courses.course2Level">Beginner</span>
+            <h3 class="text-xl font-semibold text-foreground mb-3" data-i18n="Courses.course2Title">Data Analysis Fundamentals</h3>
+            <p class="text-sm text-muted-foreground leading-relaxed mb-6 flex-1" data-i18n="Courses.course2Desc">Learn the essential workflow for preparing data, finding patterns, and communicating insights.</p>
+            <a href="mailto:info@ahmedabdelhamed.com?subject=Course%20enquiry%3A%20Data%20Analysis%20Fundamentals" class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-foreground transition-colors">
+              <span data-i18n="Courses.askAbout">Ask about this course</span>
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Course 3 -->
+          <article class="p-6 glass-card-hover flex flex-col">
+            <div class="p-3 rounded-xl w-fit mb-5 bg-secondary/10">
+              <svg class="w-7 h-7 text-secondary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+            </div>
+            <span class="text-xs font-medium text-primary mb-3" data-i18n="Courses.course3Level">Intermediate</span>
+            <h3 class="text-xl font-semibold text-foreground mb-3" data-i18n="Courses.course3Title">Power BI Dashboard Essentials</h3>
+            <p class="text-sm text-muted-foreground leading-relaxed mb-6 flex-1" data-i18n="Courses.course3Desc">Build clear and useful dashboards that help decision-makers understand performance quickly.</p>
+            <a href="mailto:info@ahmedabdelhamed.com?subject=Course%20enquiry%3A%20Power%20BI%20Dashboard%20Essentials" class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-foreground transition-colors">
+              <span data-i18n="Courses.askAbout">Ask about this course</span>
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Course 4 -->
+          <article class="p-6 glass-card-hover flex flex-col">
+            <div class="p-3 rounded-xl w-fit mb-5 bg-yellow-400/10">
+              <svg class="w-7 h-7 text-yellow-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <span class="text-xs font-medium text-primary mb-3" data-i18n="Courses.course4Level">Intermediate</span>
+            <h3 class="text-xl font-semibold text-foreground mb-3" data-i18n="Courses.course4Title">Data Quality & Validation</h3>
+            <p class="text-sm text-muted-foreground leading-relaxed mb-6 flex-1" data-i18n="Courses.course4Desc">A focused course on checking data quality, reducing errors, and documenting reliable datasets.</p>
+            <a href="mailto:info@ahmedabdelhamed.com?subject=Course%20enquiry%3A%20Data%20Quality%20%26%20Validation" class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-foreground transition-colors">
+              <span data-i18n="Courses.askAbout">Ask about this course</span>
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+            </a>
+          </article>
+
+        </div>
+
+        <p class="text-center text-sm text-muted-foreground mt-8 reveal-item">
+          <span data-i18n="Courses.enrollNote">For enrolment and external-platform access:</span>
+          <a href="mailto:info@ahmedabdelhamed.com" class="text-primary hover:underline font-medium">info@ahmedabdelhamed.com</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATIONS SECTION ==================== -->
+    <section id="certifications" class="py-12 lg:py-16 relative min-h-screen flex items-center">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+        
+        <div class="text-center mb-12 reveal-item">
+          <p class="section-title" data-i18n="Certifications.sectionTitle">Credentials</p>
+          <h2 class="section-heading" data-i18n="Certifications.heading">Certificates & continuous learning</h2>
+          <p class="section-subheading mx-auto mt-4" data-i18n="Certifications.subheading">A rotating card changes automatically every three seconds. Select a dot to view a certificate directly.</p>
+        </div>
+
+        <!-- 3D Flipper Stage -->
+        <div class="certificate-stage mx-auto max-w-4xl w-full reveal-item">
+          <div id="certificate-flipper" class="certificate-flipper">
+            
+            <!-- Front Face -->
+            <article class="certificate-face glass-card p-5 sm:p-8 flex flex-col justify-between">
+              <div class="flex items-start justify-between gap-4 mb-3">
+                <div class="p-2.5 rounded-xl bg-primary/10">
+                  <svg class="w-6 h-6 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.747.513L12 19.8l-4.245 2.13a.5.5 0 0 1-.747-.514l1.515-8.525"/><circle cx="12" cy="8" r="6"/></svg>
+                </div>
+                <span id="cert-counter" class="px-3 py-1 rounded-full bg-muted/60 text-xs font-medium text-muted-foreground">01 / 08</span>
+              </div>
+              
+              <div class="relative w-full flex-1 min-h-0 rounded-xl overflow-hidden mb-3 sm:mb-4 flex items-center justify-center cursor-pointer group" onclick="openCertModal()">
+                <img id="cert-img" src="images/1.jpg" alt="Certificate" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-background/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm z-10">
+                  <svg class="w-10 h-10 text-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 15 6 6m-6-6v4.8m0-4.8h4.8M9 9 3 3m6 6V4.2M9 9H4.2"/></svg>
+                </div>
+              </div>
+              
+              <div class="mt-auto pt-2 border-t border-border/50">
+                <p class="text-xs text-primary font-semibold uppercase tracking-wider mb-1" data-i18n="Certifications.certificateLabel">Certificate</p>
+                <h3 id="cert-title" class="text-lg sm:text-xl font-bold text-foreground leading-tight">Financial Inclusion Session, Banking Operations & Bank Branch Training</h3>
+                <p id="cert-issuer" class="text-xs text-muted-foreground mt-1">Certificate of Achievement</p>
+              </div>
+            </article>
+
+            <!-- Back Face -->
+            <article class="certificate-face certificate-back glass-card p-6 sm:p-10 flex flex-col justify-between overflow-y-auto">
+              <div class="p-3 rounded-xl bg-secondary/10 w-fit">
+                <svg class="w-8 h-8 text-secondary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="m9 9.5 2 2 4-4"/></svg>
+              </div>
+              <div>
+                <p class="text-sm text-secondary mb-3 font-semibold uppercase tracking-wider" data-i18n="Certifications.learningFocus">Learning focus</p>
+                <p id="cert-detail" class="text-2xl sm:text-3xl font-semibold text-foreground leading-relaxed">Completed</p>
+              </div>
+              <p class="text-sm text-muted-foreground" data-i18n="Certifications.nextLoading">Next credential loading…</p>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Controls & Dots -->
+        <div class="flex items-center justify-center gap-3 mt-8 reveal-item">
+          <button type="button" onclick="prevCertificate()" aria-label="Previous certificate" class="p-2 rounded-lg glass-card-hover text-muted-foreground hover:text-foreground cursor-pointer">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <div id="cert-dots" class="flex items-center gap-2"></div>
+          <button type="button" onclick="nextCertificate()" aria-label="Next certificate" class="p-2 rounded-lg glass-card-hover text-muted-foreground hover:text-foreground cursor-pointer">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section id="experience" class="py-24 relative">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+        
+        <div class="text-center mb-12 reveal-item">
+          <p class="section-title" data-i18n="Experience.sectionTitle">Background</p>
+          <h2 class="section-heading" data-i18n="Experience.heading">Experience & education</h2>
+        </div>
+
+        <div class="grid lg:grid-cols-[.8fr_1.2fr] gap-8">
+          
+          <!-- Education Card -->
+          <article class="p-7 glass-card h-fit reveal-item">
+            <div class="p-3 rounded-xl bg-primary/10 w-fit mb-5">
+              <svg class="w-7 h-7 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-.838L12.83 2.18a2 2 0 0 0-1.66 0L2.6 10.084a1 1 0 0 0 0 1.832l8.57 7.908a2 2 0 0 0 1.66 0l8.57-7.908a1 1 0 0 0 .02-.994z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+            </div>
+            <p class="text-sm uppercase tracking-wider text-primary mb-2 font-medium" data-i18n="Experience.educationLabel">Education</p>
+            <h3 class="text-xl font-semibold text-foreground" data-i18n="Experience.educationTitle">Business Information Systems</h3>
+            <p class="text-primary mt-1 font-medium" data-i18n="Experience.educationOrg">Future Academy for Specialized Technological Studies</p>
+            <p class="text-sm text-muted-foreground mt-4" data-i18n="Experience.educationDate">Expected 2027 · GPA 3.00 (Very Good)</p>
+            <p class="text-muted-foreground mt-5 leading-relaxed" data-i18n="Experience.educationDesc">Coursework combines accounting, programming, and business systems management. Active Student Union member and Social Committee Head.</p>
+          </article>
+
+          <!-- Timeline Experiences -->
+          <div class="space-y-4 reveal-item">
+            
+            <!-- Exp 1 -->
+            <article class="p-5 glass-card-hover border-l-2 border-primary/60">
+              <div class="flex gap-3">
+                <div class="p-2 rounded-lg bg-muted/60 h-fit">
+                  <svg class="w-5 h-5 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                </div>
+                <div class="min-w-0">
+                  <h3 class="text-lg font-semibold text-foreground" data-i18n="Experience.exp1Title">Graphic Designer</h3>
+                  <p class="text-primary font-medium" data-i18n="Experience.exp1Org">ToBim</p>
+                  <div class="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-xs text-muted-foreground">
+                    <span class="inline-flex items-center gap-1">
+                      <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                      <span data-i18n="Experience.exp1Date">Jul 2025 – Present</span>
+                    </span>
+                    <span class="inline-flex items-center gap-1">
+                      <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                      <span data-i18n="Experience.exp1Location">Cairo, Egypt</span>
+                    </span>
+                  </div>
+                  <p class="text-sm text-muted-foreground mt-3 leading-relaxed" data-i18n="Experience.exp1Desc">Building a clinic data-entry system and creating client-focused cards, advertisements, and UI/UX web designs.</p>
+                  <div class="flex flex-wrap gap-1.5 mt-3">
+                    <span class="px-2 py-1 rounded-md bg-muted/50 text-xs text-muted-foreground">Systems</span>
+                    <span class="px-2 py-1 rounded-md bg-muted/50 text-xs text-muted-foreground">Data Entry</span>
+                    <span class="px-2 py-1 rounded-md bg-muted/50 text-xs text-muted-foreground">UI/UX Design</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Exp 2 -->
+            <article class="p-5 glass-card-hover border-l-2 border-primary/60">
+              <div class="flex gap-3">
+                <div class="p-2 rounded-lg bg-muted/60 h-fit">
+                  <svg class="w-5 h-5 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                </div>
+                <div class="min-w-0">
+                  <h3 class="text-lg font-semibold text-foreground" data-i18n="Experience.exp2Title">Junior Accountant Trainee</h3>
+                  <p class="text-primary font-medium" data-i18n="Experience.exp2Org">Yasser Abdel Mageed Accounting & Tax Office</p>
+                  <div class="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-xs text-muted-foreground">
+                    <span class="inline-flex items-center gap-1">
+                      <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                      <span data-i18n="Experience.exp2Date">Jan 2025 – Mar 2026</span>
+                    </span>
+                    <span class="inline-flex items-center gap-1">
+                      <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                      <span data-i18n="Experience.exp2Location">Egypt</span>
+                    </span>
+                  </div>
+                  <p class="text-sm text-muted-foreground mt-3 leading-relaxed" data-i18n="Experience.exp2Desc">Developed practical experience in financial operations, data entry, customer service, and professional communication.</p>
+                  <div class="flex flex-wrap gap-1.5 mt-3">
+                    <span class="px-2 py-1 rounded-md bg-muted/50 text-xs text-muted-foreground">Accounting</span>
+                    <span class="px-2 py-1 rounded-md bg-muted/50 text-xs text-muted-foreground">Financial Operations</span>
+                    <span class="px-2 py-1 rounded-md bg-muted/50 text-xs text-muted-foreground">Data Entry</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Exp 3 -->
+            <article class="p-5 glass-card-hover border-l-2 border-primary/60">
+              <div class="flex gap-3">
+                <div class="p-2 rounded-lg bg-muted/60 h-fit">
+                  <svg class="w-5 h-5 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                </div>
+                <div class="min-w-0">
+                  <h3 class="text-lg font-semibold text-foreground" data-i18n="Experience.exp3Title">Banking Intern</h3>
+                  <p class="text-primary font-medium" data-i18n="Experience.exp3Org">Banque Misr & CIB Egypt</p>
+                  <div class="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-xs text-muted-foreground">
+                    <span class="inline-flex items-center gap-1">
+                      <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                      <span data-i18n="Experience.exp3Date">Jul 2025 – Jan 2026</span>
+                    </span>
+                    <span class="inline-flex items-center gap-1">
+                      <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                      <span data-i18n="Experience.exp3Location">Egypt</span>
+                    </span>
+                  </div>
+                  <p class="text-sm text-muted-foreground mt-3 leading-relaxed" data-i18n="Experience.exp3Desc">Built understanding of banking operations, compliance, customer relationships, and accurate transaction handling.</p>
+                  <div class="flex flex-wrap gap-1.5 mt-3">
+                    <span class="px-2 py-1 rounded-md bg-muted/50 text-xs text-muted-foreground">Compliance</span>
+                    <span class="px-2 py-1 rounded-md bg-muted/50 text-xs text-muted-foreground">Customer Service</span>
+                    <span class="px-2 py-1 rounded-md bg-muted/50 text-xs text-muted-foreground">Analysis</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Exp 4 -->
+            <article class="p-5 glass-card-hover border-l-2 border-primary/60">
+              <div class="flex gap-3">
+                <div class="p-2 rounded-lg bg-muted/60 h-fit">
+                  <svg class="w-5 h-5 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                </div>
+                <div class="min-w-0">
+                  <h3 class="text-lg font-semibold text-foreground" data-i18n="Experience.exp4Title">Social Media Specialist</h3>
+                  <p class="text-primary font-medium" data-i18n="Experience.exp4Org">Andalucía Dental Clinic</p>
+                  <div class="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-xs text-muted-foreground">
+                    <span class="inline-flex items-center gap-1">
+                      <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                      <span data-i18n="Experience.exp4Date">May 2024 – Nov 2025</span>
+                    </span>
+                    <span class="inline-flex items-center gap-1">
+                      <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                      <span data-i18n="Experience.exp4Location">Egypt</span>
+                    </span>
+                  </div>
+                  <p class="text-sm text-muted-foreground mt-3 leading-relaxed" data-i18n="Experience.exp4Desc">Supported a dedicated clinic system, maintained patient data, and designed visual content for clients.</p>
+                  <div class="flex flex-wrap gap-1.5 mt-3">
+                    <span class="px-2 py-1 rounded-md bg-muted/50 text-xs text-muted-foreground">Content Design</span>
+                    <span class="px-2 py-1 rounded-md bg-muted/50 text-xs text-muted-foreground">Systems</span>
+                    <span class="px-2 py-1 rounded-md bg-muted/50 text-xs text-muted-foreground">Data Management</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Exp 5 -->
+            <article class="p-5 glass-card-hover border-l-2 border-primary/60">
+              <div class="flex gap-3">
+                <div class="p-2 rounded-lg bg-muted/60 h-fit">
+                  <svg class="w-5 h-5 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                </div>
+                <div class="min-w-0">
+                  <h3 class="text-lg font-semibold text-foreground" data-i18n="Experience.exp5Title">Financial Auditor</h3>
+                  <p class="text-primary font-medium" data-i18n="Experience.exp5Org">HMT Groups</p>
+                  <div class="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-xs text-muted-foreground">
+                    <span class="inline-flex items-center gap-1">
+                      <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                      <span data-i18n="Experience.exp5Date">Dec 2024 – Jan 2025</span>
+                    </span>
+                    <span class="inline-flex items-center gap-1">
+                      <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                      <span data-i18n="Experience.exp5Location">Egypt</span>
+                    </span>
+                  </div>
+                  <p class="text-sm text-muted-foreground mt-3 leading-relaxed" data-i18n="Experience.exp5Desc">Entered financial data accurately and helped identify contract savings that reduced operating costs by 15%.</p>
+                  <div class="flex flex-wrap gap-1.5 mt-3">
+                    <span class="px-2 py-1 rounded-md bg-muted/50 text-xs text-muted-foreground">Auditing</span>
+                    <span class="px-2 py-1 rounded-md bg-muted/50 text-xs text-muted-foreground">Cost Review</span>
+                    <span class="px-2 py-1 rounded-md bg-muted/50 text-xs text-muted-foreground">Reporting</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="py-24 relative">
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent"></div>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+        
+        <div class="text-center mb-12 reveal-item">
+          <p class="section-title" data-i18n="Contact.sectionTitle">Get in touch</p>
+          <h2 class="section-heading" data-i18n="Contact.heading">Let's start a conversation</h2>
+          <p class="section-subheading mx-auto mt-4" data-i18n="Contact.subheading">Send a message and it will be delivered directly to Ahmed through Telegram.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto items-start">
+          
+          <!-- Contact Sidebar (Matching React Contact.tsx) -->
+          <div class="space-y-4 reveal-item">
+            <!-- Email -->
+            <a href="mailto:info@ahmedabdelhamed.com" class="p-4 sm:p-6 glass-card-hover flex items-center gap-3 sm:gap-4 overflow-hidden">
+              <span class="p-2.5 sm:p-3 rounded-lg bg-primary/10 flex-shrink-0">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </span>
+              <span class="min-w-0 flex-1">
+                <span class="block text-base sm:text-lg font-semibold text-foreground" data-i18n="Contact.emailLabel">Email</span>
+                <span class="text-sm sm:text-base text-muted-foreground break-all">info@ahmedabdelhamed.com</span>
+              </span>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel:+201116512028" class="p-4 sm:p-6 glass-card-hover flex items-center gap-3 sm:gap-4 overflow-hidden">
+              <span class="p-2.5 sm:p-3 rounded-lg bg-primary/10 flex-shrink-0">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </span>
+              <span class="min-w-0 flex-1">
+                <span class="block text-base sm:text-lg font-semibold text-foreground" data-i18n="Contact.phoneLabel">Phone</span>
+                <span class="text-sm sm:text-base text-muted-foreground break-words" dir="ltr">01116512028</span>
+              </span>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/201116512028" target="_blank" rel="noreferrer" class="p-4 sm:p-6 glass-card-hover flex items-center gap-3 sm:gap-4 overflow-hidden">
+              <span class="p-2.5 sm:p-3 rounded-lg bg-[#25D366]/10 flex-shrink-0">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#25D366]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              </span>
+              <span class="min-w-0 flex-1">
+                <span class="block text-base sm:text-lg font-semibold text-foreground">WhatsApp</span>
+                <span class="text-sm sm:text-base text-muted-foreground break-words" dir="ltr">01116512028</span>
+              </span>
+            </a>
+
+            <!-- Location -->
+            <div class="p-4 sm:p-6 glass-card flex items-center gap-3 sm:gap-4 overflow-hidden">
+              <span class="p-2.5 sm:p-3 rounded-lg bg-primary/10 flex-shrink-0">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <span class="min-w-0 flex-1">
+                <span class="block text-base sm:text-lg font-semibold text-foreground" data-i18n="Contact.locationLabel">Location</span>
+                <span class="text-sm sm:text-base text-muted-foreground break-words" data-i18n="Contact.locationValue">Heliopolis, Cairo, Egypt</span>
+              </span>
+            </div>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/ahmed3bdelhamed/" target="_blank" rel="noreferrer" class="p-4 sm:p-6 glass-card-hover flex items-center gap-3 sm:gap-4 overflow-hidden">
+              <span class="p-2.5 sm:p-3 rounded-lg bg-primary/10 flex-shrink-0">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              </span>
+              <span class="min-w-0 flex-1">
+                <span class="block text-base sm:text-lg font-semibold text-foreground" data-i18n="Contact.linkedinLabel">LinkedIn</span>
+                <span class="text-sm sm:text-base text-muted-foreground break-words" data-i18n="Contact.linkedinValue">Connect professionally</span>
+              </span>
+            </a>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="p-8 glass-card reveal-item">
+            <form id="contact-form" class="space-y-4">
+              <div>
+                <label for="name" class="block text-sm font-medium text-foreground mb-1" data-i18n="Contact.nameLabel">Name</label>
+                <input type="text" id="name" name="name" required class="form-input" data-i18n-placeholder="Contact.namePlaceholder" placeholder="Your name" />
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-medium text-foreground mb-1" data-i18n="Contact.emailFieldLabel">Email</label>
+                <input type="email" id="email" name="email" required class="form-input" data-i18n-placeholder="Contact.emailPlaceholder" placeholder="you@example.com" />
+              </div>
+
+              <div>
+                <label for="phone" class="block text-sm font-medium text-foreground mb-1" data-i18n="Contact.phoneFieldLabel">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required class="form-input" data-i18n-placeholder="Contact.phonePlaceholder" placeholder="Your phone number" />
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-medium text-foreground mb-1" data-i18n="Contact.messageLabel">Message</label>
+                <textarea id="message" name="message" rows="4" required class="form-input" data-i18n-placeholder="Contact.messagePlaceholder" placeholder="How can Ahmed help?"></textarea>
+              </div>
+
+              <button type="submit" id="form-submit-btn" class="btn-primary w-full justify-center cursor-pointer">
+                <span data-i18n="Contact.sendButton">Send Message</span>
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+              </button>
+
+              <div id="form-status-msg" class="mt-4 text-sm font-medium text-center"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="py-8 border-t border-border/50 relative">
+    <div class="absolute inset-0 bg-gradient-to-t from-primary/5 to-transparent opacity-50"></div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-center md:text-left rtl:md:text-right">
+        <h3 class="text-lg font-semibold text-primary">Ahmed Abdelhamed</h3>
+        <p class="text-sm text-muted-foreground" data-i18n="Footer.tagline">Data Analysis · Business Systems · Visual Design</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://www.linkedin.com/in/ahmed3bdelhamed/" target="_blank" rel="noreferrer" class="p-2 rounded-lg hover:bg-muted/50 text-muted-foreground hover:text-foreground transition-all" aria-label="LinkedIn">
+          <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://www.behance.net/ahmedabdelhamed14" target="_blank" rel="noreferrer" class="p-2 rounded-lg hover:bg-muted/50 text-muted-foreground hover:text-foreground transition-all" aria-label="Behance">
+          <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+        </a>
+        <a href="mailto:info@ahmedabdelhamed.com" class="p-2 rounded-lg hover:bg-muted/50 text-muted-foreground hover:text-foreground transition-all" aria-label="Email">
+          <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+      </div>
+      <p class="flex items-center gap-1 text-sm text-muted-foreground">
+        <span data-i18n="Footer.copyright">© 2026</span>
+        <span data-i18n="Footer.by">by Ahmed Abdelhamed</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING SCROLL BUTTON ==================== -->
+  <button id="floating-scroll-btn" aria-label="Scroll button">
+    <svg class="w-5 h-5 md:w-6 md:h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+  </button>
+
+  <!-- ==================== PROJECT DETAILS MODAL ==================== -->
+  <div id="project-modal" class="modal-overlay">
+    <div class="modal-box relative">
+      <button onclick="closeProjectModal()" class="modal-close-btn" aria-label="Close modal">
+        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+
+      <!-- Details Column -->
+      <div class="w-full md:w-1/2 p-6 sm:p-8 md:p-10 overflow-y-auto max-h-[50vh] md:max-h-[90vh] order-2 md:order-1">
+        <p id="modal-project-category" class="text-sm text-primary mb-2 font-medium tracking-wide uppercase"></p>
+        <h3 id="modal-project-title" class="text-2xl sm:text-3xl font-bold text-foreground mb-6 leading-tight"></h3>
+        
+        <p id="modal-project-desc" class="text-muted-foreground leading-relaxed mb-8"></p>
+        
+        <div class="mb-8">
+          <h4 class="text-sm font-semibold text-foreground uppercase tracking-wider mb-3" data-i18n="Projects.featuresLabel">Key Features</h4>
+          <ul id="modal-project-features" class="space-y-1"></ul>
+        </div>
+
+        <div class="mb-10">
+          <h4 class="text-sm font-semibold text-foreground uppercase tracking-wider mb-3" data-i18n="Projects.techLabel">Technologies</h4>
+          <div id="modal-project-tech" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <div id="modal-project-links" class="flex flex-wrap items-center gap-4"></div>
+      </div>
+
+      <!-- Slideshow Column -->
+      <div class="w-full md:w-1/2 relative bg-muted/20 border-b md:border-b-0 md:border-l border-border/50 h-[40vh] md:h-auto order-1 md:order-2 flex items-center justify-center p-4">
+        <img id="modal-project-img" src="" alt="Project Screenshot" class="w-full h-full object-contain rounded-lg drop-shadow-2xl transition-opacity duration-300" />
+        <div id="modal-project-dots" class="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2 px-3 py-2 rounded-full bg-background/50 backdrop-blur-md border border-border/50"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== CERTIFICATE ZOOM MODAL ==================== -->
+  <div id="cert-modal" class="modal-overlay">
+    <div class="relative z-10 w-full max-w-5xl max-h-[90vh] flex items-center justify-center">
+      <button onclick="closeCertModal()" class="modal-close-btn" style="top: -3rem; right: 0;" aria-label="Close">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+      <img id="cert-modal-img" src="" alt="Certificate View" class="w-full h-auto max-h-[85vh] object-contain rounded-lg drop-shadow-2xl" />
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/translations.js?v=3.1"></script>
+  <script src="js/app.js?v=3.1"></script>
+</body>
+</html>
